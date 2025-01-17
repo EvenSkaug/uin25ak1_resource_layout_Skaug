@@ -11,7 +11,8 @@ body{
 }
 
 main{
-    margin: 150px;
+    margin-inline: 150px;
+    margin-top: 20px;
     padding-bottom: 600px;
     display: flex;
     flex-direction: column;
@@ -57,9 +58,10 @@ nav {
         list-style: none;
         display: flex;
         justify-content: space-between;
+        gap: 10px;
 
-        button {
-            font-size: 20px;
+        li {
+            flex: 1;
         }
     }
 }
@@ -70,8 +72,10 @@ nav {
     color: #2A324B;
     padding-block: 20px;
     padding-inline: 30px;
-    width: 300px;
+    width: 100%;
     border: none;
+    font-size: 20px;
+    white-space: nowrap;
 }
 
 .bluebutton {
@@ -79,8 +83,10 @@ nav {
     background: #2A324B;
     padding-block: 20px;
     padding-inline: 30px;
-    width: 300px;
+    width: 100%;
     border: none;
+    font-size: 20px;
+    white-space: nowrap;
 }
 
 
