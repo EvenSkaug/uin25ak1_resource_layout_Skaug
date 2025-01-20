@@ -5,7 +5,7 @@ let JStab = ""
 let Reacttab = ""
 let CMStab = ""
 
-//Mappe arrayet en gang per kategori for å lagre informasjonen
+//Mappe arrayet en gang per kategori for å lagre informasjonen i variablene over
 //HTML tab
 resources.filter(rescourcedata => rescourcedata.category === "HTML").map(rescourcedata => HTMLtab += 
     `<h1>${rescourcedata.category}</h1>
@@ -51,7 +51,7 @@ resources.filter(rescourcedata => rescourcedata.category === "Sanity and headles
     </ul>`                                                
 )
 
-//Variabelen print for å skrive ut ønsket info til html seksjonen "content"
+//Variabelen print for å skrive ut ønsket info til html seksjonen "content" og buttons i nav
 const print = document.getElementById("content")
 
 const htmlbtn = document.getElementById("html")
@@ -60,10 +60,17 @@ const jsbtn = document.getElementById("js")
 const reactbtn = document.getElementById("react")
 const cmsbtn = document.getElementById("cms")
 
+//Skrive ut kategori navn til knappene
+htmlbtn.innerHTML = resources[0].category
+cssbtn.innerHTML = resources[1].category
+jsbtn.innerHTML = resources[2].category
+reactbtn.innerHTML = resources[3].category
+cmsbtn.innerHTML = resources[4].category
+
 //HTML kategorien blir startup siden
 print.innerHTML = HTMLtab
 
-//Funksjon for å bytte mellom tabs
+//Funksjon for å bytte mellom tabs og at den aktive taben har hvit farge
 function activetabHtml() {
     print.innerHTML = HTMLtab
 
