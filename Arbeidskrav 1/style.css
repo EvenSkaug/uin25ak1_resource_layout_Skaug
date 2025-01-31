@@ -25,7 +25,6 @@ main{
 #content {
     margin: 100px;
     padding: 0;
-    padding-top: 20px;
 
     h1 {
         color: #2A324B;
@@ -49,7 +48,8 @@ main{
 
 #contentarea {
     background-color: #fff;
-    padding-bottom: 150px;
+    margin-bottom: 150px;
+    
 }
 
 nav {
